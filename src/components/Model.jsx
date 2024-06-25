@@ -7,6 +7,8 @@ import * as THREE from 'three'
 import { Canvas } from '@react-three/fiber'
 import { View } from '@react-three/drei'
 import { models, sizes } from '../constants'
+import animateWithGsapTimeline from '../utils/animations'
+import { transform } from 'typescript'
 
 const Model = () => {
     const [size, setSize] = useState('small')
@@ -30,7 +32,14 @@ const Model = () => {
     const tl = gsap.timeline();
     
     useEffect(()=>{
-
+        if(size==='large'){
+            animateWithGsapTimeline(tl, small, smallRotation, 
+                '#view1','#view2',{transform:'translateX(-100%)', duration: 2})
+        }
+        if(size==='small'){
+            animateWithGsapTimeline(tl, large, largeRotation, 
+                '#view2','#view1',{transform:'translateX(0)', duration: 2})
+        }
     },[size])
 
 
@@ -46,7 +55,7 @@ const Model = () => {
             Take A Closer Look
         </h1>
         <div className="flex flex-col items-center mt-5">
-            <div className="w-full h-[75vh}] md:h-[90vh] overflow-hidden relative">
+            <div className="w-full h-[75vh] md:h-[90vh] overflow-hidden relative">
                 <ModelView 
                     index ={1}
                     groupRef={small}
@@ -97,7 +106,6 @@ const Model = () => {
                                     color: size===value ? 'black' : 'white'
                                 }}
                                 onClick={()=> setSize(value)}>
-                                    {console.log(value, label)}
                                     {label}
                                 </span>
                             ))
