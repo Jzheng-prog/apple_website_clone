@@ -51,3 +51,5 @@ To set up the project locally, follow these steps:
     http://localhost
     ```
 
+    This website is create using a turtorial on youtube. Reference/Credit: https://www.youtube.com/watch?v=RbxHZwFtRT4&t=32101s
+
