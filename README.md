@@ -26,6 +26,14 @@ This Apple website clone replicates the sleek design and animations of the offic
 - **Build Tool**: Vite
 - **Error Tracking**: Sentry
 
+##Some Images  
+
+<img src = https://github.com/user-attachments/assets/46f2b036-0e29-4042-8c3a-34eb8144e1d3>
+<img src = https://github.com/user-attachments/assets/04a6bf43-7766-41a6-801f-8537ed3fe6b8>
+<img src = https://github.com/user-attachments/assets/e9079e5c-23c6-4acf-bea5-a8643b9b9c96>
+<img src = https://github.com/user-attachments/assets/596dcfbd-a91c-4bac-a8ac-d062914ac980>
+
+
 ## Installation
 
 To set up the project locally, follow these steps:
